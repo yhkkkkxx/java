@@ -1,6 +1,6 @@
 package app;
 
-import employee.Employee;
+import company.Employee;
 
 public class App {
     public static void main(String[] args) {

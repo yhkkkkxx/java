@@ -1,4 +1,4 @@
-package employee;
+package company;
 
 public class Employee {
     private int id;
