@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
+        </processorPath>
+        <module name="_0314-2.test" />
+        <module name="_0314-2.main" />
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="_0312-2" target="17" />
       <module name="_0312-2.main" target="17" />
@@ -17,6 +28,12 @@
       <module name="_0313-4.test" target="17" />
       <module name="_0313.main" target="17" />
       <module name="_0313.test" target="17" />
+      <module name="_0314" target="17" />
+      <module name="_0314-2" target="17" />
+      <module name="_0314-2.main" target="17" />
+      <module name="_0314-2.test" target="17" />
+      <module name="_0314.main" target="17" />
+      <module name="_0314.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

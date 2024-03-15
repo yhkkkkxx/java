@@ -14,8 +14,9 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/_0313" />
-        <option name="gradleHome" value="" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/_0313" />
@@ -23,8 +24,9 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/_0313-2" />
-        <option name="gradleHome" value="" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/_0313-2" />
@@ -32,8 +34,9 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/_0313-3" />
-        <option name="gradleHome" value="" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/_0313-3" />
@@ -41,11 +44,32 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/_0313-4" />
-        <option name="gradleHome" value="" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/_0313-4" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/_0314" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/_0314" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/_0314-2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/_0314-2" />
           </set>
         </option>
       </GradleProjectSettings>
