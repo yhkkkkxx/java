@@ -1,6 +1,7 @@
 package com.hana.jdbc;
 
 import java.sql.*;
+
 public class Jdbc3 {
     public static void main(String[] args) {
         // 1. Driver Loading
@@ -15,19 +16,8 @@ public class Jdbc3 {
         String url = "jdbc:mysql://localhost:3306/shopdb";
         String id = "user01";
         String pwd = "111111";
-        String selectSql = "SELECT * FROM db_cust";
 
         Connection con = null;
-
-        PreparedStatement pstmt = null;
-        ResultSet rset = null;
-
-        try() {
-
-        } catch() {
-
-        }
-
         try {
             con = DriverManager.getConnection(url, id, pwd);
             System.out.println("ㅎㅎ추카추카");
@@ -37,18 +27,18 @@ public class Jdbc3 {
         }
 
         // 3. SQL 구문 생성
+        String selectSql = "c";
+        PreparedStatement pstmt = null;
+        ResultSet rset = null;
         try {
             pstmt = con.prepareStatement(selectSql);
+            pstmt.setString(1, "id02");
             // 4. 전송
             rset = pstmt.executeQuery();
-            // 5. 결과 출력
-            while(rset.next()) {
-                String custId = rset.getString("id");
-                String custPwd = rset.getString("pwd");
-                String custName = rset.getString("name");
-                System.out.printf("%s %s %s %n", custId, custPwd, custName);
-            }
-            System.out.println("InsertedData...");
+            rset.next();String custId = rset.getString("id");
+            String custPwd = rset.getString("pwd");
+            String custName = rset.getString("name");
+            System.out.printf("%s %s %s %n", custId, custPwd, custName);
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("SQL Error");

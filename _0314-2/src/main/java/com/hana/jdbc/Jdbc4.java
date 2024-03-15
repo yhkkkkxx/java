@@ -2,8 +2,9 @@ package com.hana.jdbc;
 
 import java.sql.*;
 
-public class Jdbc2 {
+public class Jdbc4 {
     public static void main(String[] args) {
+        // Delete
         // 1. Driver Loading
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -27,21 +28,16 @@ public class Jdbc2 {
         }
 
         // 3. SQL 구문 생성
-        String selectSql = "SELECT * FROM db_cust";
+        String deleteSql = "DELETE FROM db_cust WHERE id = ?";
         PreparedStatement pstmt = null;
         ResultSet rset = null;
         try {
-            pstmt = con.prepareStatement(selectSql);
+            pstmt = con.prepareStatement(deleteSql);
+            pstmt.setString(1, "id03");
+
             // 4. 전송
-            rset = pstmt.executeQuery();
-            // 5. 결과 출력
-            while(rset.next()) {
-                String custId = rset.getString("id");
-                String custPwd = rset.getString("pwd");
-                String custName = rset.getString("name");
-                System.out.printf("%s %s %s %n", custId, custPwd, custName);
-            }
-            System.out.println("데이터가 없습니다.");
+            int result = pstmt.executeUpdate();
+            System.out.println("Deleted Data..."+result);
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("SQL Error");
